@@ -23,3 +23,10 @@ s1 = "DO DN BMZVO OJ CZVM AMJH TJP. RZ YDY KDXF PK NJHZ XCVOOZM V XJPKGZ JA HJIO
 c1 = caesarShift(s1,5,alph.upper())
 print(c1)
 '''
+'''
+while True:
+    st = input("What string do you want to encipher? ")
+    sh = int(input("What value do you want for the shift? "))
+    print(caesarShift(st,sh,alph.upper()))
+    print("\n\n\n\n")
+'''

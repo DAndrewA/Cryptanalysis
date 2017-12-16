@@ -28,3 +28,9 @@ print(v1)
 v2 = vigenereCipher(1,v1,k1,alph.upper())
 print(v2)
 '''
+
+while True:
+    target = input("What text do you want to encipher? ")
+    key = input("Whats the key? ")
+    mode = int(input("0 for encipher, 1 for decipher: "))
+    print(vigenereCipher(mode,target,key,alph.upper()))

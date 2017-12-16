@@ -22,3 +22,9 @@ f22 = frequencyAnalysis(s2,2)
 f23 = frequencyAnalysis(s2,3)
 print(f21,f22,f23)
 '''
+
+while True:
+    s = input("What string do you want to analyse?")
+    l = int(input("What length do you want to analyse?"))
+    print(frequencyAnalysis(s,l))
+    print("\n\n\n\n\n")
