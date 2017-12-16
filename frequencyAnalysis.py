@@ -8,6 +8,9 @@ def frequencyAnalysis(target,subLen):
             freqDict[target[i:i+subLen]] = 1
     return freqDict
 
+'''
+Examples
+
 # examples using the function
 s1 = "abcdefghijklmnopqrstuvwxyz"
 f1 = frequencyAnalysis(s1,1)
@@ -18,3 +21,4 @@ f21 = frequencyAnalysis(s2,1)
 f22 = frequencyAnalysis(s2,2)
 f23 = frequencyAnalysis(s2,3)
 print(f21,f22,f23)
+'''
