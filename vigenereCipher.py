@@ -7,7 +7,7 @@ from caesarCipher import caesarShift
 # key: a string used to determine what the encipherment of each character should be
 # alph: the alphabet the encipherment is being done accross
 # exceptions: a string containing all the characters that are to be ignored in the encipherment
-def vigenereEncipher(mode,target,key,alph,exceptions="., -"):
+def vigenereCipher(mode,target,key,alph,exceptions="., -"):
     vigenere = ""
     for i in range(len(target)):
         if target[i] not in exceptions:
@@ -23,8 +23,8 @@ Examples
 
 s1 = "IT IS GREAT TO HEAR FROM YOU. WE DID PICK UP SOME CHATTER A COUPLE OF MONTHS AGO AND J WAS MENTIONED THERE TOO, SO WE ALREADY HAVE A FILE ON HER. HER NAME IS JODIE AND SHE WORKS AS LIAISON BETWEEN THE BRITISH LIBRARY AND THE BRITISH MUSEUM, RESEARCHING LINKS BETWEEN ARTEFACTS AND IMPERIAL ROMAN TEXTS, SO THAT TIES IN WITH THE INTELLIGENCE YOU HAVE BEEN RECEIVING. NOTHING SUGGESTS THAT SHE HAS BEEN INVOLVED IN ANYTHING SHADY AND SHE HAS HELPED WITH SEVERAL INSURANCE FRAUD CASES. SHE HAS AN INTERESTING BACKGROUND. SHE DID A PHD ON HUMAN MIGRATION STUDIES, MAINLY MATHEMATICAL MODELLING, THEN MOVED ON TO STUDY KNOWLEDGE MIGRATION WHICH GOT HER INTO THE BIBLIOPHILE CIRCUIT. AFTER GRADUATING SHE SPENT SOME TIME WITH ONE OF THE LONDON AUCTION HOUSES WORKING ON PROVENANCE BEFORE TAKING HER CURRENT POSITION WITH THE LIBRARY. THERE REALLY IS NOTHING SUSPICIOUS IN HER BACKGROUND AND I WAS INCLINED TO WRITE HER OFF AS A LEAD, BUT WHEN I GOT YOUR MESSAGE I DECIDED I WANTED TO MEET HER. I TRIED TO SET THAT UP ONLY TO BE TOLD THAT SHE IS OUT OF COUNTRY FOR A WHILE. IN CAIRO."
 k1 = "NATIONALCIPHERCHALLENEGE"
-v1 = vigenereEncipher(0,s1,k1,alph.upper())
+v1 = vigenereCipher(0,s1,k1,alph.upper())
 print(v1)
-v2 = vigenereEncipher(1,v1,k1,alph.upper())
+v2 = vigenereCipher(1,v1,k1,alph.upper())
 print(v2)
 '''
